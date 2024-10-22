@@ -1,13 +1,14 @@
-let digitadoPeloUsuario = prompt("Seu ano de nascimento:");
-let anoAtual = 2024; 
-let idade = anoAtual - digitadoPeloUsuario; 
+function verificarMultiplo() {
 
-document.getElementById("resultado").innerText = "Sua idade é: " + idade;
+  let valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+  let valor2 = parseFloat(prompt("Digite o segundo valor:"));
 
-//if (idade > 80) {
-//  document.getElementById("resultado").innerText = "Não me leva a mal, MAS TUDO ISSO?";
-//}if else (idade < 0){
-//  document.getElementById("resultado").innerText = "Temos aqui um novo BAIJAMIN BUTTON: " + idade + "anos de idade é para poucos";
-//}else{
-//  document.getElementById("resultado").innerText - "Sua idade é"
-//}
+
+  if (valor1 % valor2 === 0) {
+      alert(`${valor1} é múltiplo de ${valor2}`);
+  } else {
+      alert(`${valor1} não é múltiplo de ${valor2}`);
+  }
+}
+
+verificarMultiplo();
