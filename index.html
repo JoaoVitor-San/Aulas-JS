@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabuada</title>
 </head>
 <body>
-    <script src="aula01.js"></script>
+    <script>
+        let numero = parseInt(prompt("Digite um número:"));
+
+        document.write(`<h2>Tabuada de ${numero}</h2>`);
+        
+        for (let i = 1; i <= 24; i++) {
+            let resultado = numero * i;
+            document.write(`${numero} x ${i} = ${resultado}<br>`);
+        }
+    </script>
 </body>
 </html>
